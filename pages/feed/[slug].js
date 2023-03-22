@@ -85,6 +85,7 @@ export const getServerSideProps = async pageContext => {
   }
 
   const apiResponse = await fetch(
+    // https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=API_KEY
     `https://newsapi.org/v2/top-headlines?country=us&pageSize=5&page=${pageNumber}`,
     {
       headers: {
